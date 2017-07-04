@@ -1,3 +1,10 @@
 language: node_js
 node_js:
- - "stable"
+- stable
+deploy:
+  provider: heroku
+  api_key:
+    secure: Pzgmwm0NHdWoc5lV6MIMidplJfhHmxhOcHPxbPSyje/R+VnCkw9vpXcrbyWUt3/IjfNhlqLygAzyokMV4jGE4uRaZ7SNOkfarHzaDJgI3zAkaRHOCayDZmHq7Uels5BvoSLHADSp8Y3k0jiTYr8hMQCEGPQHbdIJ/1fuSBYDUGeu5wI54hmYeq4suaybHjIbA7eDw4PlnK/ljf/aLwCG573k4UiZsc5Vl+D3k7Zvk49f9N0O54qZj2+DH+O5YfcexxHIKA2x93yK83/FOwGaC1Rc0svBHxdGZ4Z0pAwDxfIOGsQUkQv4wmfPWdbXlPmJigmWKiU865Ymxz4gOmeBdX0reNAiGj1bWDyQiPRHgdSgVOEg/i9ugO/PIaQumfjkSULd9Fj3f1S9TgR3Angp++R+VbpAhVzOOpYPLrDW0xhQAoA8nyA3Q4SlOj2y5hp85yoPsI73QKBBA6kIfWWj6a2rBRxEbiYj3XSGCaNSMMm4v1HWFsHvBQEC2hykr5WH0F1858XHsbOoz5K9wf4iMS4Jbc5MGorjMn2y6d4PYt16z6QCC05tmv2bcyo7ghPj3GXV6Zm4yz6jdjfkFI3xadfR36zLLgHnagFjIn/n4CzG7xVgRIROhbo0l/YM40kK67u+HuJAEklwCTFfSy5QRCtyfhWEnpAOt4WKFr/C3Ww=
+  app: cryptic-forest-69237
+  on:
+    repo: aaronmiller/build-ci-exercises
